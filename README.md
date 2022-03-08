@@ -13,3 +13,15 @@
 #### Object Practice
 
 - [Click Me🦉](https://github.com/chuhoon/CodingTest/tree/main/objectPractice)
+
+#### ArrayStudy Code
+
+- [Click Me:cat:](https://github.com/chuhoon/CodingTest/tree/main/arrayTest)
+
+#### LinkedList Study Code
+
+- [Click Me:hamster:](https://github.com/chuhoon/CodingTest/tree/main/linkedList)
+
+#### Prototype Study Code
+
+- [Click Me:dog:](https://github.com/chuhoon/CodingTest/tree/main/prototype)
