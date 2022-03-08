@@ -1,7 +1,5 @@
 # CodingTest
 
----
-
 <!--Quote-->
 
 > Don't forget to code your dream.
