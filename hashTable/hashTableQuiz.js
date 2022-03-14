@@ -36,7 +36,7 @@ function solution(genres, plays) {
   const genreMap = new Map();
 
   genres
-    .map((gener, index) => [genre, plays[indexx]])
+    .map((genre, index) => [genre, plays[index]])
     .forEach(([genre, play], index) => {
       const data = genreMap.get(genre) || { total: 0, songs: [] };
       genreMap.set(genre, {
