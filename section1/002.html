@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>삼각형 판별하기</title>
+  </head>
+  <body>
+    <script>
+      /*
+        길이가 서로 다른 a,b,c 변을 사용해 삼각형을 만들 수 있으면 YES 아니면 NO
+      */
+      function triangle(a, b, c) {
+        let long;
+        let ft;
+
+        if (a < b) long = b;
+        else long = a;
+        if (long < c) long = c;
+
+        if (long < a + b) ft = 'YES';
+        else ft = 'NO';
+
+        return ft;
+      }
+
+      console.log(triangle(6, 7, 11));
+    </script>
+  </body>
+</html>

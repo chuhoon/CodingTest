@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>연필개수</title>
+  </head>
+  <body>
+    <script>
+      /*
+        학생 1인당 연필 1자루씩 나눌 때 N명이 학생 수를 입력하면 필요한 연필의 다스 수는?
+      */
+      function person(a) {
+        let pencil;
+
+        if (a % 12 == 0) {
+          pencil = a / 12;
+        } else {
+          pencil = a / 12 + 1;
+        }
+
+        return Math.floor(pencil);
+      }
+
+      console.log(person(178));
+    </script>
+  </body>
+</html>

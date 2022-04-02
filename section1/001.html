@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>세 수 중 최솟값</title>
+  </head>
+  <body>
+    <script>
+      /*
+        100이하의 자연수 a,b,c를 받아 세수 중 가장 작은 값 출력
+      */
+      function min(a, b, c) {
+        let answer;
+        if (a < b) answer = a;
+        else answer = b;
+        if (answer > c) answer = c;
+        return answer;
+      }
+      console.log(min(10, 8, 5));
+    </script>
+  </body>
+</html>
