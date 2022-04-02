@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>10부제</title>
+  </head>
+  <body>
+    <!-- 10부제를 실행하는데 자동차 번호의 일의 자리 숫자와 날짜의 일의 자리 숫자가 일치하면
+        해당 자동차의 운행을 금지한다. 자동차의 위반하는 대수를 구해라 -->
+    <script>
+      function solution(d, arr) {
+        let answer;
+
+        for (let x of arr) {
+          if (x % 10 == d) {
+            answer++;
+          }
+        }
+
+        return answer;
+      }
+
+      let arr = [20, 7, 23, 19, 10, 15, 25, 8, 13];
+      console.log(solution(3, arr));
+    </script>
+  </body>
+</html>
