@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>대문자로 변환</title>
+  </head>
+  <body>
+    <script>
+      /*
+        소문자인 str을 대문자인 str로 변환하는 프로그램
+      */
+      let str = 'ItisTimeToStudy';
+      function change(i) {
+        let changestr = '';
+        for (let j of i) {
+          if (j == j.toLowerCase()) {
+            changestr = changestr + j.toUpperCase();
+          } else {
+            changestr = changestr + j;
+          }
+        }
+        return changestr;
+      }
+      console.log(change(str));
+    </script>
+  </body>
+</html>

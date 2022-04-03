@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>대문자 찾기</title>
+  </head>
+  <body>
+    <script>
+      /*
+        문자열에 대문자가 몇개 있는지 알아보는 프로그램
+      */
+      let str = 'KoreaTimeGood';
+      function change(i) {
+        let answer = 0;
+        for (let j of i) {
+          if (j == j.toUpperCase()) {
+            answer++;
+          }
+        }
+        return answer;
+      }
+
+      console.log(change(str));
+    </script>
+  </body>
+</html>
