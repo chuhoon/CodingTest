@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>문자열 변환</title>
+  </head>
+  <body>
+    <script>
+      /*
+        BANANA 의 A 문자만 #으로 바꿔주는 프로그램 만들기
+        아니면 그대로 출력
+      */
+      let str = 'BABABA';
+
+      function change(x) {
+        let answer = '';
+        for (let y of x) {
+          if (y == 'A') {
+            answer += '#';
+          } else {
+            answer += y;
+          }
+        }
+        return answer;
+      }
+
+      console.log(change(str));
+    </script>
+  </body>
+</html>

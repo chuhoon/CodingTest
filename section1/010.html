@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>문자 찾기</title>
+  </head>
+  <body>
+    <script>
+      /*
+      *입력 예제 2가지가 안들어가서 잘못된 풀이
+
+      문자열이 주어지고 문자열 속에 R의 문자열이 몇개 들어가는지 출력하시오
+      입력 예제 COMPUTERPROGRAMMING, R이 주어짐 출력 예제 3
+      */
+      let str1 = 'COMPUTERPROGRAMMING';
+      function strNumber(j) {
+        let answer = 0;
+        for (let i of j) {
+          if (i == 'R') answer += 1;
+        }
+        return answer;
+      }
+      console.log(strNumber(str1));
+    </script>
+  </body>
+</html>
