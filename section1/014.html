@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>N개의 문자열이 입력되면 가장 긴 문자열을 출력하는 프로그램</title>
+  </head>
+  <body>
+    <script>
+      let answer = '';
+      let strlength = 0;
+
+      function long(i) {
+        for (j of i) {
+          if (j.length > strlength) {
+            strlength = j.length;
+            answer = j;
+          }
+        }
+        return answer;
+      }
+
+      let str = ['teacher', 'time', 'student', 'beautiful', 'good'];
+      console.log(long(str));
+    </script>
+  </body>
+</html>
