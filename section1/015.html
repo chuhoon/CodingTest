@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>가운데 문자 출력</title>
+  </head>
+  <body>
+    <script>
+      // 소문자로 된 문자열을 중 가운데 문자를 출력 단어의 길이가 짝수일 경우 가운데 2개의 문자 출력
+      function midstr(x) {
+        let answer = '';
+        let mid = Math.floor(x.length / 2);
+
+        if (x.length % 2 == 0) {
+          answer = x.substring(mid - 1, mid + 1);
+        } else {
+          answer = x.substring(mid, mid + 1);
+        }
+        return answer;
+      }
+      console.log(midstr('study'));
+    </script>
+  </body>
+</html>
