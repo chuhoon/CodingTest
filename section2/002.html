@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>보이는 학생</title>
+  </head>
+  <body>
+    <script>
+      // 맨 앞에 선생님이 서있는데 학생들이 순서대로 일렬로 서 있다.
+      // 앞에 서 있는 사람들보다 키 크면 선생님이 보이고 작거나 같으면 보이지 않는다.
+      // 선생님이 보이는 학생을 구해보자.
+      function solution(arr) {
+        let answer = 1; //1번째는 당연히 보이니 1로 시작
+        let changePerson = arr[0];
+
+        for (let i = 0; i < arr.length; i++) {
+          if (arr[i] > changePerson) {
+            answer++;
+            changePerson = arr[i];
+          }
+        }
+        return answer;
+      }
+
+      let arr = [130, 135, 148, 140, 145, 150, 150, 153];
+      console.log(solution(arr));
+    </script>
+  </body>
+</html>

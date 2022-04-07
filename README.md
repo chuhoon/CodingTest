@@ -10,7 +10,7 @@
 
 #### JavaScript Section2 Study Code
 
-- [Click Me:snowflake:]()
+- [Click Me:snowflake:](https://github.com/chuhoon/CodingTest/tree/main/section2)
 
 #### Stack CodingTest Study Code
 
