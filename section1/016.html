@@ -14,8 +14,10 @@
       */
       function same(i) {
         let answer = '';
-        for (let j of i) {
-          // 모르겠음
+        for (let j = 0; j < i.length; i++) {
+          // 이렇게 되면 indexof로 인해 본래의 번호랑 j의 순서랑 비교하면서 중복 제거가 된다.
+          // 문제 틀림 ** 다시보기
+          if (i.indexOf(i[j]) === j) answer += i[j];
         }
       }
       console.log(same('ksekkset'));

@@ -10,9 +10,9 @@
   <script>
     function solution(s){  
         let answer;
-        
+        // 콜백 함수 function의 내부 : i는 객체 내부의 str j는 인덱스 번호
         answer = s.filter(function(i, j) {
-          return s.indexOf(i) === j;
+          if(s.indexOf(i) == j) return true;
         })
         return answer;
     }
