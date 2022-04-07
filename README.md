@@ -8,6 +8,10 @@
 
 - [Click Me:santa:](https://github.com/chuhoon/CodingTest/tree/main/section1)
 
+#### JavaScript Section2 Study Code
+
+- [Click Me:snowflake:]()
+
 #### Stack CodingTest Study Code
 
 - [Click Me:monkey:](https://github.com/chuhoon/CodingTest/tree/main/stack)
