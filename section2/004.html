@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>점수계산</title>
+  </head>
+  <body>
+    <script>
+      /*
+        0x문제 맞거나 틀린 두경우 답을 가지는 문제.
+        0x를 만들어진 시험에서 연속적으로 답을 맞히는 경우 가산점을 주기 위해 연속적으로 맞히는 경우
+        1점씩 쌓인다 K번 연속으로 맞힐경우 K점수
+        1이 문제를 맞힌경우 0이 문제를 틀린 경우
+        아래 arr과 같이 되었을 때 점수는 1+1+2+3+1+2= 10이다
+      */
+      function solution(arr) {
+        let answer = 0;
+
+        for (let i = 1; i < arr.length; i++) {
+          if ((arr[i] == 1) & (arr[i - 1] == arr[i - 2] + 1)) {
+            arr[i] = arr[i - 1] + 1;
+          }
+        }
+
+        for (i in arr) {
+          answer += arr[i];
+        }
+
+        return answer;
+      }
+
+      let arr = [1, 0, 1, 1, 1, 0, 0, 1, 1, 0];
+      console.log(solution(arr));
+    </script>
+  </body>
+</html>
